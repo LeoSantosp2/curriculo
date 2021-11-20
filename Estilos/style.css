@@ -1,17 +1,19 @@
 @charset "UTF-8";
 
 /*Font Family Criada*/
-@font-face {
-    font-family: 'Rexlia';
-    src: url('../Fontes/rexlia_rg.otf') format('truetype');
-}
 
 @font-face {
     font-family: 'Robot';
     src: url('../Fontes/Roboto-Thin.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Philosopher';
+    src: url('../Fontes/Philosopher-Regular.ttf') format('truetype');
+}
+
 /*Lista de Cores*/
+
 :root{
     --cor01: #590212;
     --cor02: #568FA6;
@@ -21,12 +23,14 @@
 }
 
 /*Estilos do Body*/
+
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Estilos do Header*/
+
 header{
     background-color: var(--cor03);
     color: var(--cor05);
@@ -34,74 +38,107 @@ header{
     font-family: Robot, Arial, sans-serif;
 }
 
-#head-1{
+header div{
     width: 100%;
     text-align: center;
+    padding: 20px;
 }
 
-#head-1 h1{
+#pessoal h1{
     margin: 0px;
 }
 
-#head-1 img{
+#pessoal img{
     width: 149px;
     height: 149px;
     border-radius: 100px;
 }
 
-#head-2{
-    width: 100%;
-    text-align: center;
-    font-family: Rexlia, Arial, sans-serif;
+#menu{
+    font-family: Philosopher, Arial, sans-serif;
 }
 
-#head-2 ul{
+#menu ul{
     margin: 0px;
     padding-top: 100px;
     list-style: none;
     display: flex;
 }
 
-#head-2 a{
+#menu a{
     color: var(--cor05);
     text-decoration: none;
     padding-left: 25px;
-    padding-top: 50%;
 }
 
 /*Estilos do Main*/
-#info-p p{
+
+main h1{
+    font-family: Robot, Arial, sans-serif;
+}
+
+main p{
+    font-family: Philosopher, Arial, sans-serif;
+}
+
+#profissional p{
     margin: 0px;
 }
 
-#info-c{
+#contato{
     display: flex;
     color: var(--cor05);
 }
 
-#contato{
+#dados{
     width: 100%;
     background-color: var(--cor02);
     text-align: center;
-    overflow: hidden;
 }
 
-#contato h1{
-    font-family: Robot, Arial, sans-serif;
+#dados p{
+    width: 220px;
+    margin: auto;
+    display: inline-block;
+    padding: 15px;
+    padding-top: 25px;
 }
 
-#contato li{
-    list-style: none;
-    padding: 10px;
-}
-
-#falar{
+#fale{
     width: 100%;
     background-color: var(--cor01);
-    text-align: center;
     overflow: hidden;
+    text-align: center;
 }
 
-#falar h1{
-    font-family: Robot, Arial, sans-serif;
+#fale input{
+    width: 250px;
+    border-radius: 25px;
+}
+
+#fale textarea{
+    border-radius: 25px;
+}
+
+/*Estilos do footer*/
+
+footer{
+    background-color: var(--cor04);
+    color: var(--cor05);
+    height: 300px;
+}
+
+footer h3{
+    margin: 0px;
+    padding-top: 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a > img{
+    width: 26px;
+    height: 25px;
+    padding: 10px;
 }
