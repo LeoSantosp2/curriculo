@@ -20,14 +20,16 @@
     --cor03: #0C2145;
     --cor04: #E6E6E9;
     --cor05: #1E91D6;
-    --cor06: #F2F2F2;
 }
 
 /*Estilos do Body*/
 
 body{
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h1{
+    font-family: Robot, Arial, sans-serif;
 }
 
 /*Estilos do Header*/
@@ -36,17 +38,17 @@ header{
     background-color: var(--cor01);
     color: var(--cor04);
     display: flex;
-    font-family: Robot, Arial, sans-serif;
+    font-family: Philosopher, Arial, sans-serif;
+}
+
+header h1{
+    margin: 0px;
 }
 
 header div{
     width: 100%;
     text-align: center;
     padding: 20px;
-}
-
-#pessoal h1{
-    margin: 0px;
 }
 
 #pessoal img{
@@ -75,26 +77,69 @@ header div{
 /*Estilos do Main*/
 
 main{
-    background-color: var(--cor06);
+    background-color: var(--cor04);
     font-family: Philosopher, Arial, sans-serif;
+    height: 750px;
     background-image: url('../Imagens/imagem_fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main h1{
+    margin: 0px;
+    padding: 25px;
+}
+
+main p{
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
 }
 
 #profissional{
-    background-color: var(--cor06);
+    background-color: var(--cor04);
+    height: 35%;
 }
 
-#profissional p{
+#profissional ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
     margin: 0px;
+    padding: 0px;
+}
+
+#profissional li{
+    margin: 25px;
+    margin: auto;
+}
+
+#profissional input{
+    text-align: center;
 }
 
 #habilidades{
     margin: auto;
-    width: 600px;
-    height: 300px;
-    background-color: var(--cor05);
+    width: 50%;
+    height: 50%;
+}
+
+/*Lista que esta dentro da div Habilidades*/
+.lista{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--cor03);
+    color: var(--cor04);
     border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
+}
+
+.lista li{
+    padding: 15px;
+    width: 300px;
+    height: 130px;
 }
 
 /*Estilos do Aside*/
@@ -105,15 +150,14 @@ aside{
     font-family: Philosopher, Arial, sans-serif;
 }
 
-aside h1{
-    font-family: Robot, Arial, sans-serif;
+aside div{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
 }
 
 #dados{
-    width: 100%;
     background-color: var(--cor03);
-    text-align: center;
-    overflow: hidden;
 }
 
 #dados p{
@@ -124,10 +168,7 @@ aside h1{
 }
 
 #contato{
-    width: 100%;
     background-color: var(--cor02);
-    overflow: hidden;
-    text-align: center;
 }
 
 #contato input{
@@ -149,13 +190,14 @@ footer{
     font-family: Philosopher, Arial, sans-serif;
 }
 
-#redes{
+footer div{
     width: 100%;
     padding: 50px;
 }
 
-#redes h3{
+#redes h2{
     margin: 0px;
+    padding-left: 20px;
 }
 
 #redes a{
@@ -165,19 +207,18 @@ footer{
 #redes a > img{
     width: 26px;
     height: 25px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 25px;
 }
 
 #curriculo{
-    width: 100%;
     text-align: center;
-    padding-top: 80px;
 }
 
 #curriculo a{
     text-decoration: none;
     color: var(--cor04);
-    font-size: 20pt;
+    font-size: 15pt;
     background-color: var(--cor03);
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
