@@ -112,10 +112,6 @@ main p{
     margin: auto;
 }
 
-#profissional input{
-    text-align: center;
-}
-
 #habilidades{
     margin: auto;
     width: 50%;
@@ -172,10 +168,12 @@ aside div{
 #contato input{
     width: 250px;
     border-radius: 25px;
+    border: 2px solid var(--cor01);
 }
 
 #contato textarea{
     border-radius: 25px;
+    border: 2px solid var(--cor01);
 }
 
 /*Estilos do footer*/
@@ -220,5 +218,5 @@ footer div{
     background-color: var(--cor03);
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
-    padding: 5px;
+    padding: 7px;
 }
