@@ -80,7 +80,7 @@ main{
     background: var(--cor04) url('../Imagens/imagem_fundo.png') no-repeat fixed;
     background-size: cover;
     font-family: Philosopher, Arial, sans-serif;
-    height: 750px;
+    height: 1000px;
 }
 
 main h1{
@@ -94,46 +94,42 @@ main p{
     text-align: center;
 }
 
+.lista{
+    position: relative;
+}
+
+.lista ul{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    list-style: none;
+}
+
 #profissional{
     background-color: var(--cor04);
     height: 35%;
 }
 
-#profissional ul{
-    display: flex;
-    list-style: none;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-#profissional li{
-    margin: 25px;
-    margin: auto;
-}
-
 #habilidades{
-    margin: auto;
+    color: var(--cor04);
+    height: 60%;
+    display: flex;
+}
+
+#habilidades ul{
+    background-color: var(--cor03);
+    border-radius: 15px;
+    padding: 0px;
+    margin: 0px;
     width: 50%;
     height: 50%;
+    columns: 3;
 }
 
-/*Lista que esta dentro da div Habilidades*/
-.lista{
-    list-style: none;
-    display: flex;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    background-color: var(--cor03);
-    color: var(--cor04);
-    border-radius: 10px;
-}
-
-.lista li{
-    padding: 15px;
-    width: 300px;
-    height: 130px;
+#habilidades li{
+    padding: 50px;
 }
 
 /*Estilos do Aside*/
@@ -163,17 +159,6 @@ aside div{
 
 #contato{
     background-color: var(--cor02);
-}
-
-#contato input{
-    width: 250px;
-    border-radius: 25px;
-    border: 2px solid var(--cor01);
-}
-
-#contato textarea{
-    border-radius: 25px;
-    border: 2px solid var(--cor01);
 }
 
 /*Estilos do footer*/
