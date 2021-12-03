@@ -81,6 +81,7 @@ main{
     background-size: cover;
     font-family: Philosopher, Arial, sans-serif;
     height: 1000px;
+    width: auto;
 }
 
 main h1{
@@ -123,8 +124,8 @@ main p{
     border-radius: 15px;
     padding: 0px;
     margin: 0px;
-    width: 50%;
-    height: 50%;
+    max-width: 50%;
+    min-width: 450px;
     columns: 3;
 }
 
@@ -204,4 +205,9 @@ footer div{
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
     padding: 7px;
+}
+
+#curriculo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
