@@ -4,102 +4,104 @@
 
 @font-face {
     font-family: 'Robot';
-    src: url('../Fontes/Roboto-Thin.ttf') format('truetype');
+    src: url('../Fontes/roboto/Roboto-Thin.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Philosopher';
-    src: url('../Fontes/Philosopher-Regular.ttf') format('truetype');
+    font-family: 'RedRose';
+    src: url('../Fontes/red_rose/RedRose-Light.ttf') format('truetype');
 }
 
 /*Lista de Cores*/
 
 :root{
-    --cor01: #000000;
-    --cor02: #004F2D;
-    --cor03: #0C2145;
-    --cor04: #E6E6E9;
-    --cor05: #1E91D6;
+    --cor01: #353D40;
+    --cor02: #D9D9D9;
+    --cor03: #000000;
+    --cor04: #F2B138;
+    --cor05: #003F63;
+}
+
+/*Configurações Globais*/
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 /*Estilos do Body*/
 
-body{
-    margin: 0px;
-}
-
 body h1{
     font-family: Robot, Arial, sans-serif;
+    font-size: 2em;
 }
 
 /*Estilos do Header*/
 
 header{
     background-color: var(--cor01);
-    color: var(--cor04);
+    color: var(--cor02);
     display: flex;
-    font-family: Philosopher, Arial, sans-serif;
+    font-family: RedRose, Arial, sans-serif;
 }
 
 header h1{
-    margin: 0px;
+    padding-top: 50px;
 }
 
-header div{
+header section{
     width: 100%;
     text-align: center;
-    padding: 20px;
 }
 
-#pessoal img{
-    width: 150px;
-    height: 150px;
-    border-radius: 65px;
+section#pessoal > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
-#menu{
-    font-family: Philosopher, Arial, sans-serif;
+section#menu{
+    position: relative;
 }
 
-#menu ul{
-    margin: 0px;
-    padding-top: 100px;
+section#menu ul{
     list-style: none;
     display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#menu a{
+section#menu li{
+    padding: 10px;
+}
+
+section#menu a{
     text-decoration: none;
-    padding-left: 25px;
-    color: var(--cor04);
+    color: var(--cor02);
 }
 
 /*Estilos do Main*/
 
 main{
-    background: var(--cor04) url('../Imagens/imagem_fundo.png') no-repeat fixed;
+    background: var(--cor02) url('../Imagens/imagem_fundo.png') no-repeat fixed;
     background-size: cover;
-    font-family: Philosopher, Arial, sans-serif;
-    height: 1000px;
-    width: auto;
+    font-family: RedRose, Arial, sans-serif;
 }
 
 main h1{
-    margin: 0px;
-    padding: 25px;
+    padding-top: 20px;
+    padding-left: 30px;
 }
 
-main p{
-    margin: 0px;
-    padding: 15px;
-    text-align: center;
-}
-
-.lista{
+section.lista{
     position: relative;
 }
 
-.lista ul{
+section.lista ul{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -108,28 +110,26 @@ main p{
     list-style: none;
 }
 
-#profissional{
-    background-color: var(--cor04);
-    height: 35%;
+section#profissional{
+    background-color: var(--cor02);
+    color: var(--cor03);
+    height: 50vh;
 }
 
-#habilidades{
-    color: var(--cor04);
-    height: 60%;
+section#habilidades{
+    color: var(--cor03);
+    height: 90vh;
     display: flex;
 }
 
-#habilidades ul{
-    background-color: var(--cor03);
+section#habilidades ul{
+    background-color: var(--cor02);
     border-radius: 15px;
-    padding: 0px;
-    margin: 0px;
-    max-width: 50%;
-    min-width: 450px;
+    width: 50%;
     columns: 3;
 }
 
-#habilidades li{
+section#habilidades li{
     padding: 50px;
 }
 
@@ -137,77 +137,90 @@ main p{
 
 aside{
     display: flex;
-    color: var(--cor04);
-    font-family: Philosopher, Arial, sans-serif;
+    color: var(--cor03);
+    font-family: RedRose, Arial, sans-serif;
 }
 
-aside div{
+aside > section{
     width: 100%;
     text-align: center;
     overflow: hidden;
 }
 
-#dados{
-    background-color: var(--cor03);
-}
-
-#dados p{
-    width: 220px;
-    margin: auto;
-    display: inline-block;
+aside section h1{
     padding: 20px;
 }
 
-#contato{
-    background-color: var(--cor02);
+section#dados{
+    background-color: var(--cor04);
+}
+
+section#dados p{
+    width: 205px;
+    display: inline-block;
+    padding: 30px;
+}
+
+section#contato{
+    background-color: var(--cor05);
+}
+
+section#contato p{
+    padding: 10px;
 }
 
 /*Estilos do footer*/
 
 footer{
-    background-color: var(--cor04);
-    color: var(--cor01);
-    height: 200px;
+    background-color: var(--cor02);
+    color: var(--cor03);
     display: flex;
-    font-family: Philosopher, Arial, sans-serif;
+    font-family: RedRose, Arial, sans-serif;
 }
 
-footer div{
+footer section{
     width: 100%;
-    padding: 50px;
+    height: 40vh;
 }
 
-#redes h2{
-    margin: 0px;
-    padding-left: 20px;
+section#redes h1{
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 30px;
 }
 
-#redes a{
+section#redes a{
     text-decoration: none;
 }
 
-#redes a > img{
-    width: 26px;
+section#redes a > img{
+    width: 25px;
     height: 25px;
     padding-top: 10px;
-    padding-left: 25px;
+    padding-left: 30px;
 }
 
-#curriculo{
+section#curriculo{
     text-align: center;
+    padding-top: 50px;
 }
 
-#curriculo a{
-    text-decoration: none;
-    color: var(--cor04);
-    font-size: 15pt;
+section#curriculo h1{
+    font-size: 1em;
     background-color: var(--cor03);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
+    width: 250px;
+    margin: auto;
     padding: 7px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
 }
 
-#curriculo p{
-    font-family: Arial, Helvetica, sans-serif;
+section#curriculo a{
+    text-decoration: none;
+    color: var(--cor02);
+}
+
+section#curriculo p{
     font-style: italic;
+    padding-top: 7px;
 }
