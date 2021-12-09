@@ -15,11 +15,11 @@
 /*Lista de Cores*/
 
 :root{
-    --cor01: #353D40;
-    --cor02: #D9D9D9;
-    --cor03: #000000;
-    --cor04: #F2B138;
-    --cor05: #003F63;
+    --cor01: #0D0D0D;
+    --cor02: #737373;
+    --cor03: #F2F3F5;
+    --cor04: #9BBF9D;
+    --cor05: #5DA662;
 }
 
 /*Configurações Globais*/
@@ -40,13 +40,17 @@ body h1{
 
 header{
     background-color: var(--cor01);
-    color: var(--cor02);
+    color: var(--cor03);
     display: flex;
     font-family: RedRose, Arial, sans-serif;
 }
 
 header h1{
     padding-top: 50px;
+}
+
+header p{
+    color: var(--cor02);
 }
 
 header section{
@@ -81,13 +85,13 @@ section#menu li{
 
 section#menu a{
     text-decoration: none;
-    color: var(--cor02);
+    color: var(--cor03);
 }
 
 /*Estilos do Main*/
 
 main{
-    background: var(--cor02) url('../Imagens/imagem_fundo.png') no-repeat fixed;
+    background: var(--cor03) url('../Imagens/imagem_fundo.png') center top no-repeat fixed;
     background-size: cover;
     font-family: RedRose, Arial, sans-serif;
 }
@@ -111,19 +115,21 @@ section.lista ul{
 }
 
 section#profissional{
-    background-color: var(--cor02);
-    color: var(--cor03);
+    background-color: var(--cor03);
+    color: var(--cor01);
     height: 50vh;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
 }
 
 section#habilidades{
-    color: var(--cor03);
+    color: var(--cor01);
     height: 90vh;
     display: flex;
 }
 
 section#habilidades ul{
-    background-color: var(--cor02);
+    background-color: var(--cor04);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
     border-radius: 15px;
     width: 50%;
     columns: 3;
@@ -137,7 +143,7 @@ section#habilidades li{
 
 aside{
     display: flex;
-    color: var(--cor03);
+    color: var(--cor01);
     font-family: RedRose, Arial, sans-serif;
 }
 
@@ -156,7 +162,7 @@ section#dados{
 }
 
 section#dados p{
-    width: 205px;
+    width: 200px;
     display: inline-block;
     padding: 30px;
 }
@@ -172,8 +178,8 @@ section#contato p{
 /*Estilos do footer*/
 
 footer{
-    background-color: var(--cor02);
-    color: var(--cor03);
+    background-color: var(--cor03);
+    color: var(--cor01);
     display: flex;
     font-family: RedRose, Arial, sans-serif;
 }
@@ -207,7 +213,7 @@ section#curriculo{
 
 section#curriculo h1{
     font-size: 1em;
-    background-color: var(--cor03);
+    background-color: var(--cor04);
     width: 250px;
     margin: auto;
     padding: 7px;
@@ -217,7 +223,7 @@ section#curriculo h1{
 
 section#curriculo a{
     text-decoration: none;
-    color: var(--cor02);
+    color: var(--cor01);
 }
 
 section#curriculo p{
