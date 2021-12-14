@@ -20,6 +20,7 @@
     --cor03: #F2F3F5;
     --cor04: #9BBF9D;
     --cor05: #5DA662;
+    --cor06: #00000077;
 }
 
 /*Configurações Globais*/
@@ -53,7 +54,7 @@ header p{
     color: var(--cor02);
 }
 
-header section{
+header > section{
     width: 100%;
     text-align: center;
 }
@@ -70,22 +71,19 @@ section#menu{
     position: relative;
 }
 
-section#menu ul{
-    list-style: none;
+section#menu > ul{
     display: flex;
+    list-style: none;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-section#menu li{
-    padding: 10px;
-}
-
 section#menu a{
     text-decoration: none;
     color: var(--cor03);
+    padding: 10px;
 }
 
 /*Estilos do Main*/
@@ -101,11 +99,15 @@ main h1{
     padding-left: 30px;
 }
 
-section.lista{
+section#profissional{
+    background-color: var(--cor03);
+    color: var(--cor01);
+    height: 50vh;
+    box-shadow: 3px 3px 10px var(--cor06);
     position: relative;
 }
 
-section.lista ul{
+section#profissional ul{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -114,29 +116,27 @@ section.lista ul{
     list-style: none;
 }
 
-section#profissional{
-    background-color: var(--cor03);
-    color: var(--cor01);
-    height: 50vh;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
-}
-
 section#habilidades{
     color: var(--cor01);
     height: 90vh;
-    display: flex;
+    position: relative;
 }
 
-section#habilidades ul{
-    background-color: var(--cor04);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
-    border-radius: 15px;
-    width: 50%;
-    columns: 3;
+section#habilidades table{
+    background-color: var(--cor05);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px var(--cor06);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vh;
 }
 
-section#habilidades li{
-    padding: 50px;
+section#habilidades td{
+    text-align: center;
+    padding: 20px;
 }
 
 /*Estilos do Aside*/
@@ -161,10 +161,10 @@ section#dados{
     background-color: var(--cor04);
 }
 
-section#dados p{
-    width: 200px;
-    display: inline-block;
-    padding: 30px;
+section#dados > table{
+    margin: auto;
+    width: 30vw;
+    height: 35vh;
 }
 
 section#contato{
@@ -218,7 +218,7 @@ section#curriculo h1{
     margin: auto;
     padding: 7px;
     border-radius: 15px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.465);
+    box-shadow: 3px 3px 10px var(--cor06);
 }
 
 section#curriculo a{
