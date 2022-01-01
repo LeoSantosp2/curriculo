@@ -10,71 +10,160 @@
 </head>
 <body>
     <header>
-        <section id="pessoal">
+
+        <section class="head-pessoal">
+
             <h1>Leonardo Santos de Paulo</h1>
+
             <p>Desenvolvedor Web</p>
+
             <img src="Imagens/foto_perfil.png" alt="Foto de Perfil">
+
         </section>
 
-        <section id="menu">
-            <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Fale Comigo</a></li>
-            </ul>
+        <section class="head-menu">
+
+            <nav>
+
+                <a href="#">Página Inicial</a>
+                <a href="#opc">Sobre mim</a>
+                <a href="#contato">Fale Comigo</a>
+
+            </nav>
+
         </section>
+
     </header>
 
     <main>
-        <!-- Sessão de Informações Profissionais-->
-        <section class="lista" id="profissional">
-            <h1>Formação</h1>
-            <ul>
-                <li>
-                    <strong>Análise e Desenvolvimento de Sistemas</strong> <br> Faculdade das Américas - Graduação <br> Fevereiro 2019 - Julho 2021
-                </li>
-            </ul>
+        
+        <section class="profissional"> <!--Sessão de Informações Profissionais-->
+
+            <div class="opcoes">
+
+                <div class="opcao" id="opc">
+
+                    <h1>Sobre Mim</h1>
+
+                    <ul>
+
+                        <li>Olá, tudo bem? Me chamo <strong>Leonardo</strong> e tenho <strong>21 Anos</strong>. Atualmente trabalho como <strong>analista de suporte</strong>, e este é o meu primeiro emprego, estou aprendendo muito com ele. Gosto muito de aprender e adquirir conhecimentos principalmente quando o assunto é programação. Busco oportunidades para poder desenvolver e melhorar meus conhecimentos, visando sempre o crescimento entre mim e a empresa.</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="opcao" id="formacao">
+
+                    <h1>Formação</h1>
+
+                    <ul>
+
+                        <li><strong>Análise e Desenvolvimento de Sistemas</strong> <br> Faculdade das Américas - Graduação <br> Fevereiro 2019 - Julho 2021</li>
+
+                        <li><strong>Inglês</strong> <br> Enjoy - Curso (Incompleto) <br> Fevereiro 2019 - Abril 2020</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="opcao" id="experiencia">
+
+                    <h1>Experiência</h1>
+
+                    <ul>
+
+                        <li><strong>Analista de Suporte</strong> <br> Eoncoop - Autônomo <br>
+                        Desde Janeiro 2021</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="btn" id="left">
+
+                    <img src="Imagens/Left.png" alt="Seta Para Esquerda">
+
+                </div>
+
+                <div class="btn" id="right">
+
+                    <img src="Imagens/Right.png" alt="Seta Para Direita">
+
+                </div>
+
+                <div class="nav">
+
+                </div>
+                
+            </div>
+
         </section>
 
-        <!--Sessão de Informações Complementares-->
-        <section id="habilidades">
-            <h1>Habilidades</h1>
+        
+        <section class="conhecimento"> <!--Sessão de Informações Sobre Conhecimento-->
+
+            <h1>Conhecimentos</h1>
+
             <table>
+
                 <tr>
+
                     <td>HTML5/CSS3 <br> Básico</td>
                     <td>Python 3 <br> Básico</td>
                     <td>Inglês <br> Básico</td>
+
                 </tr>
+
                 <tr>
+
                     <td>Pacote Office <br> Básico</td>
                     <td>JavaScript <br> Básico</td>
                     <td>Português <br> Nativo</td>
+
                 </tr>
+
             </table>
+
         </section>
+
     </main>
 
     <aside>
-        <!--Sessões de Informações de Contato-->
-        <section id="dados">
+        
+        <section class="info-pessoal"> <!--Sessões de Informações de Contato-->
+
             <h1>Dados de Contato</h1>
+
             <table>
+
                 <tr>
+
                     <td><strong>Telefone</strong></td>
                     <td>(11) 95405-0142</td>
+
                 </tr>
+
                 <tr>
+
                     <td><strong>E-mail</strong></td>
                     <td>leogilberto2010@hotmail.com</td>
+
                 </tr>
+
                 <tr>
+
                     <td><strong>Endereço</strong></td>
                     <td>Rua Porcelana 157 <br> São Paulo SP, 04323-090</td>
+
                 </tr>
+
             </table>
+
         </section>
 
-        <section id="contato">
+        <section class="fale-comigo">
+
             <h1>Fale Comigo</h1>
 
             <input type="text" name="Nome" id="nome" size="30" maxlength="30" placeholder="Nome Completo">
@@ -90,27 +179,44 @@
             <br>
 
             <input type="button" value="Enviar" onclick="enviar()">
+
         </section>
+
     </aside>
 
     <footer>
-        <section id="redes">
+
+        <section class="redes-social">
+
             <h1>Redes Sociais</h1>
+
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="Imagens/logo_facebook.png" alt="Logo do Facebook">
             </a>
+
             <a href="https://www.instagram.com/leosaantosp/" target="_blank">
                 <img src="Imagens/logo_instagram.png" alt="Logo do Instagram">
             </a>
+
             <a href="https://github.com/LeoSantosp2" target="_blank">
                 <img src="Imagens/logo_github.png" alt="Logo do Github">
             </a>
+
         </section>
 
-        <section id="curriculo">
-            <h1><a href="Curriculo/Currículo.pdf" target="_blank">Faça Download do Meu Currículo</a></h1>
+        <section class="curriculo">
+
+            <h1>
+                <a href="Curriculo/Currículo.pdf" target="_blank">Faça Download do Meu Currículo</a>
+            </h1>
+
             <p>&copy;2021 por Leonardo Santos.</p>
+
         </section>
+
     </footer>
+
+    <script src="JavaScript/slide.js"></script>
+
 </body>
 </html>

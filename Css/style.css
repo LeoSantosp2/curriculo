@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Comforta';
-    src: url('../Fontes/comfortaa/Comfortaa-Regular.ttf') format('truetype');
+    src: url('../Fontes/comforta/Comfortaa-Regular.ttf') format('truetype');
 }
 
 /*Lista de Cores*/
@@ -32,6 +32,10 @@
 
 /*Estilos do Body*/
 
+body{
+    font-family: Comforta, Arial, sans-serif;
+}
+
 body h1{
     font-family: Robot, Arial, sans-serif;
     font-size: 2em;
@@ -43,7 +47,6 @@ header{
     background-color: var(--cor01);
     color: var(--cor03);
     display: flex;
-    font-family: Comforta, Arial, sans-serif;
 }
 
 header h1{
@@ -59,21 +62,19 @@ header > section{
     text-align: center;
 }
 
-section#pessoal > img{
+section.head-pessoal > img{
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 50%;
     margin-top: 10px;
     margin-bottom: 50px;
 }
 
-section#menu{
+section.head-menu{
     position: relative;
 }
 
-section#menu > ul{
-    display: flex;
-    list-style: none;
+section.head-menu > nav{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -81,10 +82,13 @@ section#menu > ul{
     font-size: 14px;
 }
 
-section#menu a{
-    text-decoration: none;
+section.head-menu > nav > a{
     color: var(--cor03);
     padding: 10px;
+}
+
+section.head-menu > nav > a:hover{
+    text-decoration: none;
 }
 
 /*Estilos do Main*/
@@ -92,7 +96,6 @@ section#menu a{
 main{
     background: var(--cor03) url('../Imagens/imagem_fundo.png') center top no-repeat fixed;
     background-size: cover;
-    font-family: Comforta, Arial, sans-serif;
 }
 
 main h1{
@@ -100,30 +103,91 @@ main h1{
     padding-left: 30px;
 }
 
-section#profissional{
+section.profissional{
     background-color: var(--cor03);
     color: var(--cor01);
     height: 50vh;
     box-shadow: 3px 3px 10px var(--cor06);
+    overflow: hidden;
     position: relative;
 }
 
-section#profissional ul{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    list-style: none;
+div.opcoes{
+    width: 300%;
+    display: flex;
 }
 
-section#habilidades{
+div.opcao{
+    width: 33.33%;
+    transition: 0.5s;
+}
+
+div.opcao > ul{
+    list-style: none;
+    text-align: justify;
+    text-align: center;
+    padding-top: 60px;
+    margin: auto;
+    width: 800px;
+    height: 100px;
+}
+
+div#formacao > ul{
+    display: flex;
+}
+
+div#formacao > ul > li{
+    padding-left: 10%;
+}
+
+div.btn{
+    position: absolute;
+}
+
+div.btn > img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+div#left{
+    top: 50%;
+    left: 2%;
+}
+
+div#right{
+    top: 50%;
+    right: 2%;
+}
+
+div.nav{
+    display: flex;
+    bottom: 2%;
+    left: 45%;
+    position: absolute;
+}
+
+div.nav > div{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--cor01);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+div.divAtual{
+    background-color: var(--cor01);
+}
+
+section.conhecimento{
     color: var(--cor01);
     height: 90vh;
     position: relative;
 }
 
-section#habilidades table{
+section.conhecimento table{
     background-color: var(--cor05);
     border-radius: 10px;
     box-shadow: 3px 3px 10px var(--cor06);
@@ -135,7 +199,7 @@ section#habilidades table{
     height: 50vh;
 }
 
-section#habilidades td{
+section.conhecimento td{
     text-align: center;
     padding: 20px;
 }
@@ -158,21 +222,21 @@ aside section h1{
     padding: 20px;
 }
 
-section#dados{
+section.info-pessoal{
     background-color: var(--cor04);
 }
 
-section#dados > table{
+section.info-pessoal > table{
     margin: auto;
     width: 30vw;
     height: 35vh;
 }
 
-section#contato{
+section.fale-comigo{
     background-color: var(--cor05);
 }
 
-section#contato > input, textarea{
+section.fale-comigo > input, textarea{
     padding: 5px;
     margin: 10px;
 }
@@ -186,34 +250,34 @@ footer{
     font-family: Comforta, Arial, sans-serif;
 }
 
-footer section{
+footer > section{
     width: 100%;
     height: 40vh;
 }
 
-section#redes h1{
+section.redes-social > h1{
     font-size: 25px;
     padding-top: 30px;
     padding-left: 25px;
 }
 
-section#redes a{
+section.redes-social > a{
     text-decoration: none;
 }
 
-section#redes a > img{
+section.redes-social > a > img{
     width: 20px;
     height: 20px;
     padding-top: 10px;
     padding-left: 30px;
 }
 
-section#curriculo{
+section.curriculo{
     text-align: center;
     padding-top: 50px;
 }
 
-section#curriculo h1{
+section.curriculo > h1{
     font-size: 1em;
     background-color: var(--cor04);
     width: 250px;
@@ -223,12 +287,12 @@ section#curriculo h1{
     box-shadow: 3px 3px 10px var(--cor06);
 }
 
-section#curriculo a{
+section.curriculo > h1 > a{
     text-decoration: none;
     color: var(--cor01);
 }
 
-section#curriculo p{
+section.curriculo > p{
     font-style: italic;
     padding-top: 15px;
 }
