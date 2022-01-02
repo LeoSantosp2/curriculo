@@ -239,6 +239,24 @@ section.fale-comigo{
 section.fale-comigo > input, textarea{
     padding: 5px;
     margin: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--cor01);
+    background-color: transparent;
+}
+
+section.fale-comigo > input::placeholder, textarea::placeholder{
+    color: var(--cor01);
+    font-family: Comforta, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+section.fale-comigo > input#btn{
+    background-color: var(--cor03);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-family: Comforta, Arial, Helvetica, sans-serif;
 }
 
 /*Estilos do footer*/
