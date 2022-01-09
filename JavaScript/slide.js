@@ -18,20 +18,12 @@ window.document.getElementById('0').classList.add('divAtual')
 
 var cont = window.document.querySelectorAll('.nav div')
 
-cont[0].addEventListener('click', ()=>{
-    atual = cont[0].id
-    slide()
-})
-
-cont[1].addEventListener('click', ()=>{
-    atual = cont[1].id
-    slide()
-})
-
-cont[2].addEventListener('click', ()=>{
-    atual = cont[2].id
-    slide()
-})
+for(let c=0;c < cont.length;c++){
+    cont[c].addEventListener('click', ()=>{
+        atual = cont[c].id
+        slide()
+    })
+}
 
 botE.addEventListener('click', back)
 
