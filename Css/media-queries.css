@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@media all and (min-width: 800px) and (max-width: 1300px){
+    /*Estilos do Header*/
+    section.head-menu nav > a{
+        display: grid;
+    }
+}
+
+@media all and (max-width: 800px){
+    /*Estilos do Body*/
+    body{
+        font-size: 14px;
+    }
+
+    /*Estilos do Header*/
+    header{
+        display: block;
+    }
+
+    section.head-menu{
+        text-align: left;
+        position: static;
+        width: 100%;
+        height: 30px;
+    }
+
+    section.head-menu > nav{
+        position: relative;
+        padding-left: 10px;
+    }
+
+    /*Estilos da Main*/
+    div.opcao > ul{
+        font-size: 14px;
+    }
+
+    div.btn > img{
+        width: 35px;
+        height: 35px;
+    }
+
+    section.conhecimento table{
+        font-size: 14px;
+    }
+
+    /*Estilos do Aside*/
+    aside{
+        display: block;
+    }
+
+    /*Estilos do Footer*/
+    section.curriculo > h1{
+        width: 215px;
+    }
+}
+
+@media all and (max-width: 500px){
+    /*Estilos do Body*/
+    body{
+        font-size: 12px;
+    }
+
+    /*Estilos da Main*/
+    div.opcao > ul{
+        font-size: 12px;
+    }
+
+    div.btn > img{
+        width: 25px;
+        height: 25px;
+    }
+
+    section.conhecimento table{
+        font-size: 12px;
+    }
+
+    /*Estilos do Footer*/
+    section.curriculo > h1{
+        width: 185px;
+    }
+}

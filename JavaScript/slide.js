@@ -2,7 +2,7 @@ var botE = window.document.getElementById('left')
 var botD = window.document.getElementById('right')
 var divQuant = window.document.querySelectorAll('.opcao')
 var bola = window.document.querySelector('.nav')
-var dAtual = window.document.getElementById('opc')
+var dAtual = window.document.getElementById('sobre-mim')
 var atual = 0
 
 for(var d=0; d < divQuant.length; d++){
