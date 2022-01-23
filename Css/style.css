@@ -233,7 +233,7 @@ section.fale-comigo{
     background-color: var(--cor05);
 }
 
-section.fale-comigo > input, textarea{
+section.fale-comigo input, textarea{
     padding: 5px;
     margin: 10px;
     border: none;
@@ -242,14 +242,16 @@ section.fale-comigo > input, textarea{
     background-color: transparent;
 }
 
-section.fale-comigo > input::placeholder, textarea::placeholder{
+section.fale-comigo input::placeholder, textarea::placeholder{
     color: var(--cor01);
     font-family: Comforta, Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
-section.fale-comigo > input#btn{
+section.fale-comigo button{
     background-color: var(--cor03);
+    padding: 5px;
+    margin: 10px;
     border-radius: 10px;
     cursor: pointer;
     border: none;
