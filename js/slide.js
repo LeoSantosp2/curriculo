@@ -1,38 +1,36 @@
-var botE = window.document.getElementById('left')
-var botD = window.document.getElementById('right')
+const botE = window.document.getElementById('left')
+const botD = window.document.getElementById('right')
 var divQuant = window.document.querySelectorAll('.opcao')
 var bola = window.document.querySelector('.nav')
 var dAtual = window.document.getElementById('sobre-mim')
-var atual = 0
+let atual = 0
 
-for(var d=0; d < divQuant.length; d++){
-    var div = window.document.createElement('div')
+for(let i=0; i < divQuant.length; i++){
+    let div = window.document.createElement('div')
 
-    div.id = d
+    div.id = i
 
     bola.appendChild(div)
-
 }
 
 window.document.getElementById('0').classList.add('divAtual')
 
 var cont = window.document.querySelectorAll('.nav div')
 
-for(let c=0;c < cont.length;c++){
-    cont[c].addEventListener('click', ()=>{
-        atual = cont[c].id
+for(let i=0; i < cont.length; i++){
+    cont[i].addEventListener('click', ()=>{
+        atual = cont[i].id
         slide()
     })
 }
 
 botE.addEventListener('click', back)
+botD.addEventListener('click', next)
 
 function back(){
     atual--
     slide()
 }
-
-botD.addEventListener('click', next)
 
 function next(){
     atual++

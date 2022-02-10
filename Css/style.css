@@ -16,8 +16,8 @@
 
 :root{
     --cor01: #0D0D0D;
-    --cor02: #737373;
-    --cor03: #F2F3F5;
+    --cor02: #F2F3F5;
+    --cor03: #737373;
     --cor04: #9BBF9D;
     --cor05: #5DA662;
     --cor06: #00000077;
@@ -28,12 +28,15 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 /*Estilos do Body*/
 
 body{
     font-family: Comforta, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 body h1{
@@ -45,29 +48,31 @@ body h1{
 
 header{
     background-color: var(--cor01);
-    color: var(--cor03);
-    display: flex;
-}
-
-header h1{
-    padding-top: 50px;
-}
-
-header p{
     color: var(--cor02);
+    display: flex;
 }
 
 header > section{
     width: 100%;
+}
+
+section.head-pessoal{
     text-align: center;
+}
+
+section.head-pessoal > h1{
+    padding-top: 30px;
+}
+
+section.head-pessoal > p{
+    color: var(--cor03);
 }
 
 section.head-pessoal > img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 section.head-menu{
@@ -75,15 +80,15 @@ section.head-menu{
 }
 
 section.head-menu > nav{
+    width: 350px;
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
 }
 
 section.head-menu > nav > a{
-    color: var(--cor03);
+    color: var(--cor02);
     padding: 5px;
 }
 
@@ -91,24 +96,23 @@ section.head-menu > nav > a:hover{
     text-decoration: none;
 }
 
-/*Estilos do Main*/
+/*Estilos da Main*/
 
 main{
-    background: var(--cor03) url('../Imagens/imagem_fundo.png') center top no-repeat fixed;
+    background: var(--cor02) url('../Imagens/imagem_fundo.png') center top no-repeat fixed;
     background-size: cover;
 }
 
 main h1{
-    padding: 20px 0px 0px 30px;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 section.profissional{
-    background-color: var(--cor03);
-    color: var(--cor01);
     height: 350px;
-    box-shadow: 3px 3px 10px var(--cor06);
-    overflow: hidden;
+    background-color: var(--cor02);
     position: relative;
+    overflow: hidden;
 }
 
 div.opcoes{
@@ -123,17 +127,16 @@ div.opcao{
     position: relative;
 }
 
-div.opcao > ul{
-    list-style: none;
-    display: flex;
+div.opcao > div{
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
 }
 
-div.opcao > ul > li{
+div.opcao > div > p{
     padding: 15px;
 }
 
@@ -159,9 +162,9 @@ div#right{
 
 div.nav{
     display: flex;
+    position: absolute;
     bottom: 2%;
     left: 45%;
-    position: absolute;
 }
 
 div.nav > div{
@@ -179,43 +182,35 @@ div.divAtual{
 }
 
 section.conhecimento{
-    color: var(--cor01);
-    height: 90vh;
+    height: 500px;
     position: relative;
 }
 
-section.conhecimento table{
+section.conhecimento > table{
     background-color: var(--cor05);
     border-radius: 10px;
     box-shadow: 3px 3px 10px var(--cor06);
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
-    height: 50vh;
-}
-
-section.conhecimento td{
+    width: 600px;
+    height: 300px;
     text-align: center;
-    padding: 20px;
 }
 
 /*Estilos do Aside*/
 
 aside{
     display: flex;
-    color: var(--cor01);
-    font-family: Comforta, Arial, sans-serif;
 }
 
 aside > section{
     width: 100%;
     text-align: center;
-    overflow: hidden;
 }
 
-aside section h1{
+aside h1{
     padding: 20px;
 }
 
@@ -224,9 +219,10 @@ section.info-pessoal{
 }
 
 section.info-pessoal > table{
-    margin: auto;
     width: 30vw;
-    height: 35vh;
+    height: 30vh;
+    margin: auto;
+    padding-top: 50px;
 }
 
 section.fale-comigo{
@@ -244,27 +240,26 @@ section.fale-comigo input, textarea{
 
 section.fale-comigo input::placeholder, textarea::placeholder{
     color: var(--cor01);
-    font-family: Comforta, Arial, Helvetica, sans-serif;
+    font-family: Comforta, Arial, sans-serif;
     font-size: 12px;
 }
 
 section.fale-comigo button{
-    background-color: var(--cor03);
+    background-color: var(--cor02);
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    font-family: Comforta, Arial, Helvetica, sans-serif;
+    font-family: Comforta, Arial, sans-serif;
 }
 
-/*Estilos do footer*/
+/*Estilos do Footer*/
 
 footer{
-    background-color: var(--cor03);
+    background-color: var(--cor02);
     color: var(--cor01);
     display: flex;
-    font-family: Comforta, Arial, sans-serif;
 }
 
 footer > section{
@@ -285,31 +280,29 @@ section.redes-social > a{
 section.redes-social > a > img{
     width: 20px;
     height: 20px;
-    padding-top: 10px;
-    padding-left: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 section.curriculo{
     text-align: center;
-    padding-top: 50px;
 }
 
 section.curriculo > h1{
-    font-size: 1em;
-    background-color: var(--cor04);
-    width: 250px;
-    margin: auto;
-    padding: 7px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px var(--cor06);
+    font-size: 1.5em;
+    margin-top: 30px;
 }
 
 section.curriculo > h1 > a{
-    text-decoration: none;
     color: var(--cor01);
+    text-decoration: none;
+}
+
+section.curriculo > h1 > a:hover{
+    text-decoration: underline;
 }
 
 section.curriculo > p{
+    margin: 10px;
     font-style: italic;
-    padding-top: 15px;
 }

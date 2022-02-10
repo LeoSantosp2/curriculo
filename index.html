@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style.css">
-    <link rel="stylesheet" href="Css/media-queries.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <link rel="shortcut icon" href="Icone/favicon.ico" type="image/x-icon">
     <title>Currículo</title>
 </head>
@@ -47,13 +47,11 @@
 
                     <h1>Sobre Mim</h1>
 
-                    <ul>
+                    <div>
 
-                        <li>
-                            Olá, tudo bem? Me chamo <strong>Leonardo</strong> e tenho <strong>21 Anos</strong>. Atualmente trabalho como <strong>Analista de Suporte</strong>, e este é o meu primeiro emprego, estou aprendendo muito com ele. Gosto muito de aprender e adquirir conhecimentos principalmente quando o assunto é programação. Busco oportunidades para poder desenvolver e melhorar meus conhecimentos, visando sempre o crescimento entre mim e a empresa.
-                        </li>
+                        <p>Olá, tudo bem? Me chamo <strong>Leonardo</strong> e tenho <strong>21 Anos</strong>. Atualmente trabalho como <strong>Analista de Suporte</strong>, e este é o meu primeiro emprego, estou aprendendo muito com ele. Gosto muito de aprender e adquirir conhecimentos principalmente quando o assunto é programação. Busco oportunidades para poder desenvolver e melhorar meus conhecimentos, visando sempre o crescimento entre mim e a empresa.</p>
 
-                    </ul>
+                    </div>
 
                 </div>
 
@@ -61,25 +59,13 @@
 
                     <h1>Formação</h1>
 
-                    <ul>
-                    
-                        <li>
-                            <strong>Análise e Desenvolvimento de sistemas</strong>
-                            <br>
-                            Faculdade das Américas - Graduação
-                            <br>
-                            Fevereiro 2019 - Julho 2021
-                        </li>
+                    <div>
 
-                        <li>
-                            <strong>Inglês</strong>
-                            <br>
-                            Enjoy - Curso (Incompleto)
-                            <br>
-                            Fevereiro 2019 - Abril 2020
-                        </li>
+                        <p><strong>Análise e Desenvolvimento de sistemas</strong> <br> Faculdade das Américas - Graduação <br> Fevereiro 2019 - Julho 2021</p>
 
-                    </ul>
+                        <p><strong>Inglês</strong> <br> Enjoy - Curso (Incompleto) <br> Fevereiro 2019 - Abril 2020</p>
+
+                    </div>
 
                 </div>
 
@@ -87,14 +73,11 @@
 
                     <h1>Experiência</h1>
 
-                    <ul>
+                    <div>
 
-                        <li>
-                            <strong>Analista de Suporte</strong> <br> Eoncoop - Autônomo <br>
-                            Desde Janeiro 2021
-                        </li>
+                        <p><strong>Analista de Suporte</strong> <br> Eoncoop - Autônomo <br> Desde Janeiro 2021</p>
 
-                    </ul>
+                    </div>
 
                 </div>
 
@@ -110,9 +93,7 @@
 
                 </div>
 
-                <div class="nav">
-
-                </div>
+                <div class="nav"></div>
                 
             </div>
 
@@ -126,7 +107,7 @@
 
                 <tr>
 
-                    <td>HTML5/CSS3 <br> Básico</td>
+                    <td>Html5/Css3 <br> Básico</td>
                     <td>Python 3 <br> Básico</td>
                     <td>Inglês <br> Básico</td>
 
@@ -181,19 +162,23 @@
 
         <section class="fale-comigo" id="contato">
 
-            <form id="form" action="" method="get">
+            <form id="form" action="https://formsubmit.co/leogilberto2010@hotmail.com" method="post">
 
                 <h1>Fale Comigo</h1>
 
-                <input type="text" name="Nome" id="nome" size="30" maxlength="30" placeholder="Nome Completo">
+                <input type="text" name="Nome" id="nome" size="30" maxlength="30" placeholder="Nome Completo" required>
 
                 <br>
 
-                <input type="email" name="Email" id="email" size="30" maxlength="30" placeholder="E-mail">
+                <input type="email" name="Email" id="email" size="30" maxlength="30" placeholder="E-mail" required>
+
+                <br>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
 
                 <br>
                 
-                <textarea name="Msg" id="msg" cols="45" rows="7" placeholder="Digite sua Mensagem"></textarea>
+                <textarea name="Msg" id="msg" cols="45" rows="7" placeholder="Digite sua Mensagem" required></textarea>
 
                 <br>
 
@@ -227,9 +212,7 @@
 
         <section class="curriculo">
 
-            <h1>
-                <a href="Curriculo/Currículo.pdf" target="_blank">Faça Download do Meu Currículo</a>
-            </h1>
+            <h1><a href="Curriculo/Currículo.pdf" target="_blank">Faça Download do Meu Currículo</a></h1>
 
             <p>&copy;2021 por Leonardo Santos.</p>
 
@@ -237,7 +220,8 @@
 
     </footer>
 
-    <script src="JavaScript/slide.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/form.js"></script>
 
 </body>
 </html>
