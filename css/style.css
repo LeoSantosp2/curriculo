@@ -35,7 +35,6 @@
 
 body{
     font-family: Comforta, Arial, sans-serif;
-    font-size: 1em;
     line-height: 2em;
 }
 
@@ -57,14 +56,12 @@ header > section{
 }
 
 section.head-pessoal{
+    padding: 30px;
     text-align: center;
 }
 
-section.head-pessoal > h1{
-    padding-top: 30px;
-}
-
 section.head-pessoal > p{
+    padding: 5px;
     color: var(--cor03);
 }
 
@@ -72,7 +69,6 @@ section.head-pessoal > img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-bottom: 30px;
 }
 
 section.head-menu{
@@ -104,8 +100,7 @@ main{
 }
 
 main h1{
-    padding-top: 30px;
-    padding-left: 30px;
+    padding: 25px;
 }
 
 section.profissional{
@@ -137,6 +132,7 @@ div.opcao > div{
 }
 
 div.opcao > div > p{
+    /*background-color: red;*/
     padding: 15px;
 }
 
@@ -175,7 +171,7 @@ div.nav > div{
     border-radius: 50%;
     border: 1px solid var(--cor01);
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 div.divAtual{
@@ -200,6 +196,11 @@ section.conhecimento > table{
     text-align: center;
 }
 
+section.conhecimento table td{
+    width: 100px;
+    height: 100px;
+}
+
 /*Estilos do Aside*/
 
 aside{
@@ -220,10 +221,14 @@ section.info-pessoal{
 }
 
 section.info-pessoal > table{
-    width: 30vw;
-    height: 30vh;
+    width: 300px;
+    height: 250px;
     margin: auto;
-    padding-top: 50px;
+}
+
+section.info-pessoal table td{
+    width: 100px;
+    height: 50px;
 }
 
 section.fale-comigo{
@@ -268,21 +273,23 @@ footer > section{
     height: 40vh;
 }
 
-section.redes-social > h1{
+section.redes-sociais > h1{
     font-size: 25px;
-    padding-top: 30px;
-    padding-left: 25px;
+    padding: 20px;
 }
 
-section.redes-social > a{
+section.redes-sociais > nav{
+    margin-left: 25px;
+}
+
+section.redes-sociais > nav > a{
     text-decoration: none;
 }
 
-section.redes-social > a > img{
+section.redes-sociais > nav > a > img{
     width: 20px;
     height: 20px;
-    margin-top: 10px;
-    margin-left: 30px;
+    margin: 10px;
 }
 
 section.curriculo{
@@ -291,7 +298,7 @@ section.curriculo{
 
 section.curriculo > h1{
     font-size: 1.5em;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 section.curriculo > h1 > a{
@@ -304,6 +311,5 @@ section.curriculo > h1 > a:hover{
 }
 
 section.curriculo > p{
-    margin: 10px;
     font-style: italic;
 }

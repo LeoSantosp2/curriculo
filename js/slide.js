@@ -1,21 +1,21 @@
-const botE = window.document.getElementById('left')
-const botD = window.document.getElementById('right')
-var divQuant = window.document.querySelectorAll('.opcao')
-var bola = window.document.querySelector('.nav')
-var dAtual = window.document.getElementById('sobre-mim')
+const botE = document.getElementById('left')
+const botD = document.getElementById('right')
+const divQuant = document.querySelectorAll('.opcao')
+const bola = document.querySelector('.nav')
+const dAtual = document.getElementById('sobre-mim')
 let atual = 0
 
 for(let i=0; i < divQuant.length; i++){
-    let div = window.document.createElement('div')
+    let div = document.createElement('div')
 
     div.id = i
 
     bola.appendChild(div)
 }
 
-window.document.getElementById('0').classList.add('divAtual')
+document.getElementById('0').classList.add('divAtual')
 
-var cont = window.document.querySelectorAll('.nav div')
+const cont = document.querySelectorAll('.nav div')
 
 for(let i=0; i < cont.length; i++){
     cont[i].addEventListener('click', ()=>{
@@ -24,18 +24,15 @@ for(let i=0; i < cont.length; i++){
     })
 }
 
-botE.addEventListener('click', back)
-botD.addEventListener('click', next)
-
-function back(){
+botE.addEventListener('click', () =>{
     atual--
     slide()
-}
+})
 
-function next(){
+botD.addEventListener('click', () =>{
     atual++
     slide()
-}
+})
 
 function slide(){
     if(atual >= divQuant.length){
@@ -45,7 +42,7 @@ function slide(){
         atual = divQuant.length - 1
     }
 
-    window.document.querySelector('.divAtual').classList.remove('divAtual')
+    document.querySelector('.divAtual').classList.remove('divAtual')
     dAtual.style.marginLeft = -33.33 * atual + '%'
-    window.document.getElementById(atual).classList.add('divAtual')
+    document.getElementById(atual).classList.add('divAtual')
 }

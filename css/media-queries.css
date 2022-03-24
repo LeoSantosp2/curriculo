@@ -1,72 +1,45 @@
 @charset "UTF-8";
 
-@media all and (max-width: 1300px){
-    /*Estilos do Header*/
-
-    section.head-menu nav{
-        font-size: 14px;
-    }
-}
-
-@media all and (max-width: 800px){
-    /*Estilos do Body*/
-
-    body{
-        font-size: 1em;
-        line-height: 1.3em;
-    }
-
-    /*Estilos do Header*/
-
+@media all and (max-width: 850px){
     header{
         display: block;
     }
 
-    section.head-pessoal > p{
-        padding: 10px;
-    }
-
     section.head-menu{
-        position: sticky;
+        position: initial;
     }
 
     section.head-menu > nav{
-        position: sticky;
-        top: 0;
-        left: 0;
-        transform: translate(0, 0);
-        padding-bottom: 5px;
-        padding-left: 10px;
+        width: 100%;
+        padding: 5px;
+        position: initial;
+        top: 0px;
+        left: 0px;
+        transform: translate(0px, 0px);
     }
 
-    /*Estilos do Main*/
-
-    main{
-        line-height: 1.3em;
+    section.profissional{
+        line-height: 1.5em;
     }
 
     div.opcao > div > p{
-        padding: 0px;
-        width: 300px;
+        width: 400px;
     }
 
-    section.conhecimento > table{
-        width: 550px;
-        height: 350px;
+    section.curriculo > h1{
+        font-size: 1em;
     }
 
-    /*Estilos do Footer*/
-
-    section.curriculo{
-        font-size: 0.8em;
+    section.curriculo > p{
+        font-size: 12px;
     }
 }
 
 @media all and (max-width: 650px){
-    /*Estilos do Main*/
-
-    main{
-        line-height: 1.1em;
+    div.opcao > div > p{
+        width: 300px;
+        padding: 5px;
+        line-height: 1em;
     }
 
     div.btn > img{
@@ -75,37 +48,25 @@
     }
 
     section.conhecimento > table{
-        width: 400px;
-        height: 350px;
+        width: 450px;
+        font-size: 1em;
     }
-
-    /*Estilos do Aside*/
 
     aside{
         display: block;
     }
-
-    section.info-pessoal > table{
-        padding-top: 10px;
-    }
-
-    /*Estilos do Footer*/
-
-    section.curriculo > h1{
-        font-size: 17px;
-    }
 }
 
 @media all and (max-width: 450px){
-    /*Estilos do Main*/
-
-    div.opcao > div{
-        font-size: 12px;
-        width: 320px;
+    main h1{
+        padding: 15px;
+        font-size: 1.3em;
     }
 
     div.opcao > div > p{
-        padding: 5px;
+        width: 210px;
+        font-size: 13px;
+        line-height: 1em;
     }
 
     div.btn > img{
@@ -113,28 +74,15 @@
         height: 20px;
     }
 
-    /*Estilos do Footer*/
-
-    section.redes-social > h1{
-        font-size: 20px;
-    }
-
-    section.redes-social > a{
-        margin-left: 30px;
-    }
-
-    section.redes-social > a > img{
-        width: 15px;
-        height: 15px;
-        margin-top: 15px;
-        margin-left: 0px;
+    section.conhecimento > table{
+        width: 400px;
     }
 
     section.curriculo > h1{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     section.curriculo > p{
-        font-size: 10px;
+        font-size: 11px;
     }
 }
