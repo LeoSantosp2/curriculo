@@ -1,88 +1,78 @@
 @charset "UTF-8";
 
 @media all and (max-width: 850px){
+    /*Style Header*/
+
     header{
         display: block;
     }
 
     section.head-menu{
-        position: initial;
-    }
-
-    section.head-menu > nav{
-        width: 100%;
         padding: 5px;
-        position: initial;
-        top: 0px;
-        left: 0px;
-        transform: translate(0px, 0px);
+        display: block;
     }
 
-    section.profissional{
-        line-height: 1.5em;
-    }
+    /*Style Main*/
 
-    div.opcao > div > p{
-        width: 400px;
-    }
-
-    section.curriculo > h1{
-        font-size: 1em;
-    }
-
-    section.curriculo > p{
-        font-size: 12px;
+    div.aba > div{
+        padding: 60px;
     }
 }
 
 @media all and (max-width: 650px){
-    div.opcao > div > p{
-        width: 300px;
-        padding: 5px;
-        line-height: 1em;
+    /*Style Main*/
+
+    div.aba > div{
+        padding: 30px;
     }
 
-    div.btn > img{
-        width: 25px;
-        height: 25px;
-    }
-
-    section.conhecimento > table{
-        width: 450px;
-        font-size: 1em;
-    }
+    /*Style Aside*/
 
     aside{
         display: block;
     }
+
+    /*Style Footer*/
+
+    footer > section{
+        padding: 30px;
+    }
+
+    section.curriculo > nav > a{
+        font-size: 12px;
+    }
 }
 
 @media all and (max-width: 450px){
-    main h1{
-        padding: 15px;
-        font-size: 1.3em;
+    /*Style Header*/
+
+    section.head-menu{
+        display: flex;
     }
 
-    div.opcao > div > p{
-        width: 210px;
-        font-size: 13px;
+    /*Style Main*/
+
+    div.aba > div{
+        padding-right: 60px;
         line-height: 1em;
-    }
-
-    div.btn > img{
-        width: 20px;
-        height: 20px;
     }
 
     section.conhecimento > table{
         width: 400px;
+        height: 350px;
     }
 
-    section.curriculo > h1{
-        font-size: 15px;
+    /*Style Footer*/
+
+    section.curriculo{
+        padding: 5px;
     }
 
-    section.curriculo > p{
+    section.curriculo > nav > a{
         font-size: 11px;
+    }
+
+    section.curriculo > nav p{
+        font-size: 10px;
     }
 }

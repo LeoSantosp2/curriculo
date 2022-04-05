@@ -1,48 +1,54 @@
-const botE = document.getElementById('left')
-const botD = document.getElementById('right')
-const divQuant = document.querySelectorAll('.opcao')
-const bola = document.querySelector('.nav')
-const dAtual = document.getElementById('sobre-mim')
-let atual = 0
-
-for(let i=0; i < divQuant.length; i++){
-    let div = document.createElement('div')
-
-    div.id = i
-
-    bola.appendChild(div)
-}
-
-document.getElementById('0').classList.add('divAtual')
-
-const cont = document.querySelectorAll('.nav div')
-
-for(let i=0; i < cont.length; i++){
-    cont[i].addEventListener('click', ()=>{
-        atual = cont[i].id
-        slide()
-    })
-}
-
-botE.addEventListener('click', () =>{
-    atual--
-    slide()
-})
-
-botD.addEventListener('click', () =>{
-    atual++
-    slide()
-})
-
 function slide(){
-    if(atual >= divQuant.length){
-        atual = 0
-    }
-    else if(atual < 0){
-        atual = divQuant.length - 1
+    const abas = document.querySelectorAll('.aba')
+    const ball = document.querySelector('.nav')
+    const divAtual = document.getElementById('sobre-mim')
+    let atual = 0
+
+    for(let i = 0; i < abas.length; i++){
+        let div = document.createElement('div')
+
+        div.id = i
+
+        ball.appendChild(div)
     }
 
-    document.querySelector('.divAtual').classList.remove('divAtual')
-    dAtual.style.marginLeft = -33.33 * atual + '%'
-    document.getElementById(atual).classList.add('divAtual')
+    document.getElementById('0').classList.add('atual')
+
+    const cont = document.querySelectorAll('.nav div')
+
+    for(let i=0; i < cont.length; i++){
+        cont[i].addEventListener('click', ()=>{
+            atual = cont[i].id
+            transition()
+        })
+    }
+
+    document.addEventListener('click', e =>{
+        const event = e.target
+
+        if(event.classList.contains('leftB')){
+            atual--
+            transition()
+        }
+
+        if(event.classList.contains('rightB')){
+            atual++
+            transition()
+        }
+    })
+
+    function transition(){
+        if(atual >= abas.length){
+            atual = 0
+        }
+        else if(atual < 0){
+            atual = abas.length - 1
+        }
+
+        document.querySelector('.atual').classList.remove('atual')
+        divAtual.style.marginLeft = -33.33 * atual + '%'
+        document.getElementById(atual).classList.add('atual')
+    }
 }
+
+slide()
