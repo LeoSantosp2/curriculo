@@ -1,54 +1,69 @@
-function slide(){
-    const abas = document.querySelectorAll('.aba')
-    const ball = document.querySelector('.nav')
-    const divAtual = document.getElementById('sobre-mim')
-    let atual = 0
-
-    for(let i = 0; i < abas.length; i++){
-        let div = document.createElement('div')
-
-        div.id = i
-
-        ball.appendChild(div)
+class Slides{
+    constructor(){
+        this.slides = document.querySelectorAll('.slide')
+        this.nav = document.querySelector('.nav')
+        this.divAtual = document.getElementById('sobre-mim')
+        this.atual = 0
     }
 
-    document.getElementById('0').classList.add('atual')
+    ativarSlides(){
+        this.criarDiv = this.criarDiv()
+        this.cont = this.cont()
+        this.clicarBtn = this.clicarBtn()
+    }
 
-    const cont = document.querySelectorAll('.nav div')
+    criarDiv(){
+        for(let i = 0; i < this.slides.length; i++){
+            const div = document.createElement('div')
 
-    for(let i=0; i < cont.length; i++){
-        cont[i].addEventListener('click', ()=>{
-            atual = cont[i].id
-            transition()
+            div.id = i
+
+            this.nav.appendChild(div)
+        }
+
+        document.getElementById('0').classList.add('atual')
+    }
+
+    cont(){
+        const cont = document.querySelectorAll('.nav div')
+
+        for(let i = 0; i < cont.length; i++){
+            cont[i].addEventListener('click', ()=>{
+                this.atual = cont[i].id
+                this.transition()
+            })
+        }
+    }
+
+    clicarBtn(){
+        document.addEventListener('click', e =>{
+            const event = e.target
+
+            if(event.classList.contains('leftB')){
+                this.atual--
+                this.transition()
+            }
+            if(event.classList.contains('rightB')){
+                this.atual++
+                this.transition()
+            }
         })
     }
 
-    document.addEventListener('click', e =>{
-        const event = e.target
-
-        if(event.classList.contains('leftB')){
-            atual--
-            transition()
+    transition(){
+        if(this.atual >= this.slides.length){
+            this.atual = 0
         }
-
-        if(event.classList.contains('rightB')){
-            atual++
-            transition()
-        }
-    })
-
-    function transition(){
-        if(atual >= abas.length){
-            atual = 0
-        }
-        else if(atual < 0){
-            atual = abas.length - 1
+        else if(this.atual < 0){
+            this.atual = this.slides.length - 1
         }
 
         document.querySelector('.atual').classList.remove('atual')
-        divAtual.style.marginLeft = -33.33 * atual + '%'
-        document.getElementById(atual).classList.add('atual')
+        this.divAtual.style.marginLeft = -25 * this.atual + '%'
+        document.getElementById(this.atual).classList.add('atual')
     }
 }
 
-slide()
+const slide = new Slides()
+
+slide.ativarSlides()

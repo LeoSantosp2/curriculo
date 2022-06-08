@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media all and (max-width: 850px){
-    /*Style Header*/
+    /*style header*/
 
     header{
         display: block;
@@ -12,27 +12,31 @@
         display: block;
     }
 
-    /*Style Main*/
+    /*style main*/
 
-    div.aba > div{
-        padding: 60px;
+    div.slide > div{
+        padding: 50px 60px;
     }
 }
 
 @media all and (max-width: 650px){
-    /*Style Main*/
+    /*style main*/
 
-    div.aba > div{
-        padding: 30px;
+    div#sobre-mim > div{
+        padding: 30px 60px;
     }
 
-    /*Style Aside*/
+    div#projetos > div > ul > li{
+        margin: 0px 30px;
+    }
+
+    /*style aside*/
 
     aside{
         display: block;
     }
 
-    /*Style Footer*/
+    /*style footer*/
 
     footer > section{
         padding: 30px;
@@ -44,35 +48,39 @@
 }
 
 @media all and (max-width: 450px){
-    /*Style Header*/
+    /*style header*/
 
     section.head-menu{
         display: flex;
     }
 
-    /*Style Main*/
+    /*style main*/
 
-    div.aba > div{
+    div.slide > div{
         padding-right: 60px;
         line-height: 1em;
     }
 
-    section.conhecimento > table{
+    div#projetos > div > ul > li{
+        margin: 10px 30px;
+    }
+
+    section.conhecimentos > table{
         width: 400px;
         height: 350px;
     }
 
-    /*Style Footer*/
+    /*style footer*/
 
     section.curriculo{
         padding: 5px;
     }
 
-    section.curriculo > nav > a{
-        font-size: 11px;
+    section.curriculo > div > a{
+        font-size: 10px;
     }
 
-    section.curriculo > nav p{
+    section.curriculo > div p{
         font-size: 10px;
     }
 }
