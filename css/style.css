@@ -18,7 +18,7 @@
     --cor01: #000000;
     --cor02: #F2F2F2;
     --cor03: #AEB9F2;
-    --cor04: #88AABF;
+    --cor04: #BDD9F2;
     --cor05: #999999;
     --shadow: #00000077;
 }
@@ -237,9 +237,8 @@ aside h1{
 }
 
 section.info-pessoal{
-    background-color: var(--cor05);
+    background-color: var(--cor04);
 }
-
 section.info-pessoal > table{
     width: 300px;
     height: 250px;
