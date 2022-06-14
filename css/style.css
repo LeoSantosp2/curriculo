@@ -93,7 +93,8 @@ section.head-menu > nav > a:hover{
 
 main{
     width: 100%;
-    
+    background: var(--cor02) url('../images/imgs/img-fundo.png') center top no-repeat fixed;
+    background-size: cover;
 }
 
 main h1{
@@ -197,8 +198,6 @@ div.nav > div.atual{
 section.conhecimentos{
     height: 500px;
     position: relative;
-    background: url('../images/imgs/img-fundo.png') center top no-repeat fixed;
-    background-size: cover;
 }
 
 section.conhecimentos > table{
