@@ -197,7 +197,7 @@ div.nav > div.atual{
 section.conhecimentos{
     height: 500px;
     position: relative;
-    background: var(--cor02) url('../images/imgs/img-fundo.png') center top no-repeat fixed;
+    background: url('../images/imgs/img-fundo.png') center top no-repeat fixed;
     background-size: cover;
 }
 
