@@ -4,12 +4,13 @@
     /*style header*/
 
     header{
-        display: block;
+        flex-direction: column;
     }
 
     section.head-menu{
         padding: 5px;
-        display: block;
+        flex-direction: column;
+        align-items: baseline;
     }
 
     /*style main*/
@@ -33,7 +34,7 @@
     /*style aside*/
 
     aside{
-        display: block;
+        flex-direction: column;
     }
 
     /*style footer*/
@@ -47,11 +48,11 @@
     }
 }
 
-@media all and (max-width: 450px){
+@media all and (max-width: 550px){
     /*style header*/
 
     section.head-menu{
-        display: flex;
+       align-items: center;
     }
 
     /*style main*/
