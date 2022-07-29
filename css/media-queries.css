@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media all and (max-width: 850px){
-    /*style header*/
+    /*=== style header ===*/
 
     header{
         flex-direction: column;
@@ -13,7 +13,7 @@
         align-items: baseline;
     }
 
-    /*style main*/
+    /*=== style main ===*/
 
     div.slide > div{
         padding: 50px 60px;
@@ -21,7 +21,7 @@
 }
 
 @media all and (max-width: 650px){
-    /*style main*/
+    /*=== style main ===*/
 
     div#sobre-mim > div{
         padding: 30px 60px;
@@ -31,13 +31,13 @@
         margin: 0px 30px;
     }
 
-    /*style aside*/
+    /*=== style aside ===*/
 
     aside{
         flex-direction: column;
     }
 
-    /*style footer*/
+    /*=== style footer ===*/
 
     footer > section{
         padding: 30px;
@@ -49,13 +49,13 @@
 }
 
 @media all and (max-width: 550px){
-    /*style header*/
+    /*=== style header ===*/
 
     section.head-menu{
        align-items: center;
     }
 
-    /*style main*/
+    /*=== style main ===*/
 
     div.slide > div{
         padding-right: 60px;
@@ -71,7 +71,7 @@
         height: 350px;
     }
 
-    /*style footer*/
+    /*=== style footer ===*/
 
     section.curriculo{
         padding: 5px;

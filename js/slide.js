@@ -7,9 +7,9 @@ class Slides{
     }
 
     ativarSlides(){
-        this.criarDiv = this.criarDiv()
-        this.cont = this.cont()
-        this.clicarBtn = this.clicarBtn()
+        this.criarDiv()
+        this.cont()
+        this.clicarBtn()
     }
 
     criarDiv(){
