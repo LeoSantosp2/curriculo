@@ -15,11 +15,11 @@
 /*=== Lista de Cores ===*/
 
 :root{
-    --cor01: #000000;
-    --cor02: #F2F2F2;
-    --cor03: #AEB9F2;
-    --cor04: #BDD9F2;
-    --cor05: #999999;
+    --cor01: #2E424D;
+    --cor02: #5B8291;
+    --cor03: #98DAD9;
+    --cor04: #EAEBED;
+    --cor05: #000000;
     --shadow: #00000077;
 }
 
@@ -49,7 +49,7 @@ body h1{
 header{
     width: 100%;
     background-color: var(--cor01);
-    color: var(--cor02);
+    color: var(--cor04);
     display: flex;
 }
 
@@ -64,7 +64,7 @@ section.head-pessoal{
 
 section.head-pessoal > p{
     padding: 5px 0px;
-    color: var(--cor05);
+    color: var(--cor02);
 }
 
 section.head-pessoal > img{
@@ -80,7 +80,7 @@ section.head-menu{
 }
 
 section.head-menu > nav > a{
-    color: var(--cor02);
+    color: var(--cor04);
     padding: 0px 5px;
     text-decoration: none;
 }
@@ -93,7 +93,7 @@ section.head-menu > nav > a:hover{
 
 main{
     width: 100%;
-    background: var(--cor02) url('../images/imgs/img-fundo.png') center top no-repeat fixed;
+    background: var(--cor04) url('../images/imgs/img-fundo.png') center top no-repeat fixed;
     background-size: cover;
 }
 
@@ -105,7 +105,7 @@ section.profissional{
     height: 350px;
     position: relative;
     overflow: hidden;
-    background-color: var(--cor02);
+    background-color: var(--cor04);
 }
 
 div.slides{
@@ -142,7 +142,7 @@ div#projetos > div > ul > li{
 
 div#projetos > div > ul > li > a{
     text-decoration: none;
-    color: var(--cor01);
+    color: var(--cor05);
 }
 
 div#projetos > div > ul > li > a:hover{
@@ -187,12 +187,12 @@ div.nav > div{
     height: 20px;
     margin-left: 10px;
     border-radius: 50%;
-    border: 1px solid var(--cor01);
+    border: 1px solid var(--cor05);
     cursor: pointer;
 }
 
 div.nav > div.atual{
-    background-color: var(--cor01);
+    background-color: var(--cor05);
 }
 
 section.conhecimentos{
@@ -201,8 +201,8 @@ section.conhecimentos{
 }
 
 section.conhecimentos > table{
-    background-color: var(--cor03);
-    color: var(--cor06);
+    background-color: var(--cor02);
+    color: var(--cor04);
     border-radius: 10px;
     box-shadow: 3px 3px 10px var(--shadow);
     position: absolute;
@@ -232,18 +232,23 @@ aside > section{
 }
 
 aside h1{
-    padding: 20px;
-    color: var(--cor01);
+    margin-top: 20px;
 }
 
 section.info-pessoal{
-    background-color: var(--cor04);
+    background-color: var(--cor02);
 }
+
+section.info-pessoal > h1{
+    color: var(--cor04);
+    margin-bottom: 10px;
+}
+
 section.info-pessoal > table{
     width: 300px;
     height: 250px;
     margin: auto;
-    color: var(--cor01);
+    color: var(--cor04);
 }
 
 section.info-pessoal table > tr > td{
@@ -255,13 +260,17 @@ section.fale-comigo{
     background-color: var(--cor03);
 }
 
+section.fale-comigo h1{
+    color: var(--cor01);
+}
+
 section.fale-comigo input, textarea{
     padding: 5px;
     margin: 10px;
     border: none;
     outline: none;
-    border-bottom: 2px solid var(--cor02);
-    border-left: 2px solid var(--cor02);
+    border-bottom: 2px solid var(--cor04);
+    border-left: 2px solid var(--cor04);
     background-color: transparent;
 }
 
@@ -273,7 +282,7 @@ section.fale-comigo input::placeholder, textarea::placeholder{
 section.fale-comigo button{
     width: 70px;
     height: 30px;
-    background-color: var(--cor02);
+    background-color: var(--cor04);
     margin: 10px 0px;
     border-radius: 10px;
     cursor: pointer;
@@ -288,8 +297,8 @@ section.fale-comigo button:hover{
 
 footer{
     width: 100%;
-    background-color: var(--cor02);
-    color: var(--cor01);
+    background-color: var(--cor04);
+    color: var(--cor05);
     display: flex;
 }
 
@@ -315,7 +324,7 @@ section.curriculo{
 }
 
 section.curriculo > div > a{
-    color: var(--cor07);
+    color: var(--cor05);
 }
 
 section.curriculo > div > a:hover{

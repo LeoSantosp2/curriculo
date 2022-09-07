@@ -4,9 +4,6 @@ class Slides{
         this.nav = document.querySelector('.nav')
         this.divAtual = document.getElementById('sobre-mim')
         this.atual = 0
-    }
-
-    ativarSlides(){
         this.criarDiv()
         this.cont()
         this.clicarBtn()
@@ -65,5 +62,3 @@ class Slides{
 }
 
 const slide = new Slides()
-
-slide.ativarSlides()
